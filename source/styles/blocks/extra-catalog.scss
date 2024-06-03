@@ -18,7 +18,14 @@
 }
 
 .extra-catalog__title {
+  margin: 0;
   position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-catalog__title {
+    padding: 0 0 0 40px;
+  }
 }
 
 .extra-catalog__title-text {
