@@ -19,7 +19,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .catalog__title {
     padding: 74px 0 0;
   }
@@ -39,7 +39,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .catalog__list {
     grid-template-columns: repeat(4, 1fr);
     gap: 63px 80px;
@@ -60,7 +60,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .catalog__item {
     padding: 0 38px 40px;
   }

@@ -9,7 +9,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .subscribe__container {
     padding-top: 96px;
     padding-bottom: 104px;
@@ -21,18 +21,13 @@
   margin: 0 0 32px;
 }
 
-.subscribe__title-text {
-  padding: 0 40px;
-  background-color: $bg-basic;
-}
-
 @media (min-width: $tablet-width) {
   .subscribe__title {
     margin-bottom: 66px;
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .subscribe__title {
     margin-bottom: 72px;
   }
@@ -47,8 +42,27 @@
   width: 100vw;
   background-color: $basic-color-button;
   top: 50%;
-  left: 50%;
+  left: 80%;
   transform: translate(-50%, -50%);
+}
+
+@media (min-width: $tablet-width) {
+  .subscribe__title::after {
+    left: 50%;
+  }
+}
+
+.subscribe__title-text {
+  padding-right: 40px;
+  background-color: $bg-basic;
+  display: inline-block;
+}
+
+@media (min-width: $tablet-width) {
+  .subscribe__title-text {
+    padding: 0 40px;
+    line-height: 43px;
+  }
 }
 
 .subscribe__text {
@@ -117,7 +131,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .subscribe__input {
     min-width: 496px;
   }
@@ -129,6 +143,7 @@
 
 @media (min-width: $tablet-width) {
   .subscribe__button {
-    width: 256px;
+    min-width: 256px;
+    min-height: auto;
   }
 }
