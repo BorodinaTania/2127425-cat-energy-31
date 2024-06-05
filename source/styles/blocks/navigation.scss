@@ -30,23 +30,9 @@
   }
 }
 
-@media (max-width: 767px) {
-  .navigation__list {
-    text-align: center;
-    z-index: 3;
-    background-color: $bg-basic;
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
-
 .navigation__item {
   display: flex;
   background-color: $bg-basic;
-  border-bottom: 1px solid #e6e6e6;
   flex: 1 0 66px;
   justify-content: center;
   align-items: center;
