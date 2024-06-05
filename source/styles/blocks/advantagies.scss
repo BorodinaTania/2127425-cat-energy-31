@@ -1,3 +1,9 @@
+@media (min-width: $tablet-width) {
+  .advantages {
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
 .advantages__list {
   display: flex;
   flex-direction: column;
@@ -10,8 +16,9 @@
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px 50px;
+    gap: 37px 55px;
     counter-reset: new 0;
+    padding: 10px 0 57px;
   }
 }
 
@@ -24,6 +31,12 @@
 .advantages__title {
   line-height: 40px;
   margin: 20px 0 20px 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    margin-top: 54px;
+  }
 }
 
 .advantages__item {
@@ -44,37 +57,38 @@
     width: 250px;
     min-height: 280px;
   }
-}
 
-.advantages__item::after {
-  content: counter(advantages);
-  z-index: -1;
-  color: $bg-section-dark-button-secondary;
-  font-family: $secondary-font;
-  font-size: 280px;
-  line-height: 280px;
-  display: none;
-  position: absolute;
-  top: 10px;
-  right: 3px;
-}
-
-@media (min-width: $tablet-width) {
   .advantages__item::after {
+    content: counter(advantages);
+    z-index: -1;
+    color: $bg-section-dark-button-secondary;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    position: absolute;
+    top: 10px;
+    right: 3px;
     display: block;
+    align-items: end;
   }
-}
 
-.advantages__item--fast {
-  counter-increment: advantages 1;
-}
+  .advantages__item--healthy::after {
+    counter-increment: advantages 0;
+    margin-right: 25px;
+  }
 
-.advantages__item--functional {
-  counter-increment: advantages 2;
-}
+  .advantages__item--fast::after {
+    counter-increment: advantages 1;
+  }
 
-.advantages__item--productive {
-  counter-increment: advantages 3;
+  .advantages__item--functional::after {
+    counter-increment: advantages 2;
+  }
+
+  .advantages__item--productive::after {
+    counter-increment: advantages 3;
+    margin-right: -5px;
+  }
 }
 
 .advantages__item::before {
@@ -85,6 +99,15 @@
   background-repeat: no-repeat;
   min-width: 60px;
   height: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item::before {
+    background-size: 80px 80px;
+    min-width: 80px;
+    height: 80px;
+    margin-top: 4px;
+  }
 }
 
 .advantages__item--healthy::before {
@@ -116,4 +139,15 @@
   line-height: 18px;
   text-align: left;
   margin-bottom: 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__text {
+    font-family: $primary-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    word-break: break-word;
+  }
 }
