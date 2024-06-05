@@ -71,6 +71,12 @@
   opacity: 0.6;
 }
 
+@media (min-width: $desktop-width) {
+  .header__logo-image {
+    margin-top: 4px;
+  }
+}
+
 .header__logo-text {
   width: 101px;
   height: auto;

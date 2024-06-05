@@ -25,6 +25,7 @@
 @media (min-width: $desktop-width) {
   .advantages__list {
     grid-template-columns: repeat(4, 1fr);
+    gap: 75px;
   }
 }
 
@@ -36,6 +37,12 @@
 @media (min-width: $tablet-width) {
   .advantages__title {
     margin-top: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__title {
+    margin-top: 10px;
   }
 }
 
@@ -107,6 +114,12 @@
     min-width: 80px;
     height: 80px;
     margin-top: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item::before {
+    margin: 6px 0 0;
   }
 }
 

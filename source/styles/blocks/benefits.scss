@@ -15,6 +15,7 @@
 @media (min-width: $desktop-width) {
   .benefits__container {
     padding-top: 82px;
+    padding-bottom: 71px;
   }
 }
 
@@ -68,8 +69,8 @@
   }
 
   .benefits__item:last-child {
-    column-gap: 47px;
-    padding: 47px 67px 59px 33px;
+    column-gap: 64px;
+    padding: 45px 67px 59px 53px;
   }
 }
 
@@ -154,10 +155,6 @@
   padding: 22px 0;
 }
 
-.benefits__item-description--secondary {
-  padding: 21px 0;
-}
-
 @media (min-width: $tablet-width) {
   .benefits__item-description {
     border-bottom: none;
@@ -169,7 +166,17 @@
 @media (min-width: $desktop-width) {
   .benefits__item-description {
     grid-column: -1/1;
-    padding: 39px 0 27px;
+    padding: 39px 0 25px;
+  }
+}
+
+.benefits__item-description--secondary {
+  padding: 21px 0;
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__item-description--secondary {
+    padding: 38px 0 27px;
   }
 }
 
