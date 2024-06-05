@@ -21,8 +21,7 @@
   flex-flow: column wrap;
   align-items: center;
   gap: 20px;
-  padding-top: 27px;
-  padding-bottom: 40px;
+  padding: 26px 20px 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,12 +43,12 @@
 }
 
 .illustration__title {
-  margin: 0;
+  margin: 0 0 0 1px;
   line-height: 40px;
 }
 
 .illustration__description {
-  margin: 40px 0 20px;
+  margin: 40px 0 20px 1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -136,7 +135,8 @@
   line-height: 24px;
   color: $extra-color-text;
   align-self: center;
-  margin: 10px auto;
+  margin: 12px auto;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -183,7 +183,8 @@
   color: $extra-color-text;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 20px;
+  margin: 0 0 0 4px;
+  letter-spacing: 0.1px;
 }
 
 @media (min-width: $tablet-width) {

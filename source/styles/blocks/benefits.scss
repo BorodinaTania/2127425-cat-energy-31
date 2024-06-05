@@ -38,7 +38,7 @@
   background-color: $bg-section-dark-button-secondary;
   grid-template-columns: auto 1fr;
   column-gap: 20px;
-  padding: 21px 20px 22px;
+  padding: 21px 20px 23px 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -102,7 +102,7 @@
   background-image: url("../../icons/stack.svg#cat-pro");
   width: 67px;
   height: 50px;
-  // margin: 3px -8px 0;
+  margin: 2 -8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -142,10 +142,14 @@
 }
 
 .benefits__item-description {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $basic-color-border;
   grid-column: -1/1;
   margin: 0;
   padding: 22px 0;
+}
+
+.benefits__item-description--secondary {
+  padding: 21px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -177,12 +181,17 @@
   align-items: center;
   padding-top: 18px;
   gap: 15px;
+  margin-left: 1px;
+}
+
+.benefits__item-link--secondary {
+  padding-top: 19px;
 }
 
 .benefits__item-link::after {
   content: "";
-  width: 32px;
-  height: 10px;
+  width: 35px;
+  height: 11px;
   background-image: url("../../icons/stack.svg#arrow-right");
   background-position: 50%;
   background-size: contain;
