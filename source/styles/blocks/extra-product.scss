@@ -47,6 +47,9 @@
 @media (min-width: $tablet-width) {
   .extra-product__title {
     margin: 0 0 24px;
+    font-family: $secondary-font;
+    font-size: 20px;
+    font-weight: 400;
     line-height: 20px;
   }
 }
