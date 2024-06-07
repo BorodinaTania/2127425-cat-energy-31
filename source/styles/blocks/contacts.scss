@@ -2,6 +2,12 @@
   position: relative;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__container {
+    background-color: $bg-section-dark-button-secondary;
+  }
+}
+
 .contacts__info {
   display: flex;
   flex-wrap: wrap;
