@@ -215,8 +215,18 @@
   opacity: 0.6;
 }
 
+.benefits__item-link:focus,
+.benefits__item-link:focus-visible {
+  opacity: 0.6;
+}
+
 .benefits__item-link:active {
   opacity: 0.4;
+}
+
+.benefits__item-link--disabled {
+  color: #bbbbbb;
+  pointer-events: none;
 }
 
 @media (min-width: $tablet-width) {

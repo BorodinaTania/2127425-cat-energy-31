@@ -130,12 +130,19 @@
   border: 1px solid $basic-color-cards;
 }
 
-.subscribe__input:focus {
+.subscribe__input:focus,
+.subscribe__input:focus-visible {
   border: 2px solid $basic-color-text;
 }
 
 .subscribe__input:focus:invalid {
   border: 2px solid $status-error;
+}
+
+.subscribe__input:disabled {
+  border: #bbbbbb;
+  color: #bbbbbb;
+  pointer-events: none;
 }
 
 @media (min-width: $tablet-width) {

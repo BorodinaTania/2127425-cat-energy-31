@@ -34,13 +34,22 @@
   mask-repeat: no-repeat;
 }
 
-.socials__list-link:hover::after,
-.socials__list-link:focus::after {
+.socials__list-link:hover::after {
+  background-color: $basic-color-button;
+}
+
+.socials__list-link:focus::after,
+.socials__list-link:focus-visible::after {
   background-color: $basic-color-button;
 }
 
 .socials__list-link:active::after {
-  opacity: 0.4;
+  opacity: 0.3;
+}
+
+.socials__list-link--disabled {
+  color: #bbbbbb;
+  pointer-events: none;
 }
 
 .socials__list-link--vkontakte::after {
