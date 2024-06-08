@@ -15,7 +15,7 @@
   display: block;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 .hero::after {
@@ -29,7 +29,21 @@
   display: block;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    position: relative;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .hero::after {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -50,6 +64,7 @@
     position: absolute;
     top: -1000px;
     right: 0;
+    display: block;
   }
 
   .hero::after {
@@ -65,6 +80,7 @@
     position: absolute;
     top: -114px;
     right: 0;
+    display: block;
   }
 }
 
