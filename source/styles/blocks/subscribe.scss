@@ -124,12 +124,15 @@
   border: 1px solid $basic-color-cards;
 }
 
-.subscribe__input:focus {
+.subscribe__input:focus,
+.subscribe__input:focus-visible {
   border: 2px solid $basic-color-text;
+  padding-left: 12px;
 }
 
 .subscribe__input:focus:invalid {
   border: 2px solid $status-error;
+  padding-left: 12px;
 }
 
 @media (min-width: $tablet-width) {
