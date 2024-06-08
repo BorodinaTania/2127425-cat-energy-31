@@ -4,6 +4,34 @@
   }
 }
 
+.hero::before {
+  content: "";
+  z-index: -4;
+  background-image: linear-gradient(90deg, #545358 0%, #424045 100%);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 63%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero::after {
+  content: "";
+  z-index: -4;
+  background-image: linear-gradient(270deg, rgba(99, 166, 59, 0.85), rgba(104, 183, 56, 0.85));
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 63%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 @media (min-width: $desktop-width) {
   .hero {
     position: relative;
